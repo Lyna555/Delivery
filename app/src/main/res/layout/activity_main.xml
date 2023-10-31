@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    tools:context=".AddUtilisateur">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/nom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:hint="Nom Utilisateur"
+        android:inputType="textPersonName|text" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nom"
+        android:layout_marginBottom="10dp"
+        android:hint="Email"
+        android:inputType="textWebEmailAddress" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/adresse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/email"
+        android:layout_marginBottom="10dp"
+        android:hint="Adresse"
+        android:inputType="text" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/telephone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/adresse"
+        android:layout_marginBottom="10dp"
+        android:hint="Telephone"
+        android:inputType="phone" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/mdps"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/telephone"
+        android:layout_marginBottom="10dp"
+        android:hint="Mot de passe"
+        android:inputType="textWebPassword" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/register"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        />
+
+</RelativeLayout>
